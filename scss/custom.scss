@@ -1,0 +1,16 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+/* ESTILOS PROPIOS */
+//Generales
+@import "generales/variables";
+@import "generales/fuentes";
+@import "generales/componentes";
+@import "generales/generales";
+@import "generales/navegacion";
+
+//Layouts
+@import "layout/encabezado";
+@import "layout/sobre-mi";
+@import "layout/tecnologias";
+@import "layout/contacto";
+@import "layout/footer";

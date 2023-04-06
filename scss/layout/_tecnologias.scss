@@ -1,0 +1,34 @@
+/* Tecnologías */
+section:nth-of-type(2) {
+    .container {
+        .row {
+            .icon-tech {
+
+                transition: all .5s;
+
+                i {
+                    font-size: 5rem;
+                    color: $colorExtra1;
+                }
+
+                p {
+                    text-transform: uppercase;
+                    font-family: $fuenteTitulos;
+                    color: $colorSecundario;
+                }
+
+                .c-sharp{
+                    width: 5rem;
+                }
+
+                .sql{
+                    width: 3.7rem;
+                }
+
+                &:hover {
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

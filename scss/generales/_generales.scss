@@ -1,0 +1,70 @@
+/*Estilos Generales*/
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: $background;
+    font-family: $fuenteTexto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    font-family: $fuenteTitulos;
+}
+
+h1,
+h2,
+h3,
+h4,
+h6{
+    color: $colorPrincipal;
+}
+
+h5{
+    color: $background;
+}
+
+h1{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+a {
+    text: {
+        decoration: none;
+        transform: uppercase;
+    }
+    letter-spacing: 0.05rem;
+}
+
+p{
+    color: $colorSecundario;
+}
+
+.titulo {
+    padding: 4rem 0;
+}
+
+nav{
+    background-color: $background;
+}
+
+.icon-volver-inicio {
+    font-size: 2.5rem;
+    opacity: 0.6;
+    position: fixed;
+    right: 16px;
+    bottom: 16px;
+    transition: all 1s;
+    z-index: 2;
+
+    a{
+        color: $colorSecundario;;
+    }
+}

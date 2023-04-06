@@ -1,0 +1,48 @@
+/*Navegación*/
+.navbar {
+    box-shadow: 0 12px 20px rgba($color: $background, $alpha: 0.1);
+
+    .navbar-brand{
+        color: $colorPrincipal;
+        span{
+            font: {
+                style: italic;
+                size: 1rem;
+            }
+            text-transform: lowercase;
+            color: $colorExtra1;
+        }
+    }
+    .container {
+        div {
+            .navbar-nav {
+                .nav-item {
+                    .nav-link{
+                        font-weight: 600;
+                        color: $colorPrincipal;
+                        position: relative;
+                        transition: all .5s;
+
+                        &:hover{
+                            color: $colorExtra1;
+                        }
+
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 0;
+                            height: 1.5px;
+                            background-color: $colorExtra1;
+                            bottom: -5px;
+                            transition: all .5s;
+                        }
+
+                        &:hover::before{
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,34 @@
+/* Encabezado */
+header {
+    min-height: 100vh;
+    background: url(../../img/001.ImagePortFolio.jpg), rgba($color: $colorExtra1, $alpha: 0.5) no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-blend-mode: multiply;
+    position: relative;
+    z-index: 3;
+
+    &::before {
+        @extend .overlay;
+    }
+
+    .container {
+        .row {
+            div {
+                h1, p{                    
+                    padding: 4rem 0;                    
+                }
+                .line {
+                    border-top: 4px solid $colorExtra1;
+                    width: 50%;
+                    display: block;
+                }
+                p {
+                    color: $colorPrincipal;
+                    letter-spacing: 0.05rem;
+                }
+            }
+        }
+    }
+}

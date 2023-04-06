@@ -1,0 +1,74 @@
+/* Sobre Mí */
+section:nth-of-type(1) {
+    .container {
+
+        article {
+            background-color: rgba($color: $colorPrincipal, $alpha: 0.1);
+            box-shadow: 0px 0px 15px 3px rgba(252, 247, 247, 0.49);
+
+            .descripcion {
+
+                .span-sm {
+                    color: $colorExtra1;
+                }
+
+                .span-smt {
+                    color: rgba($color: $colorExtra1, $alpha: 0.75);
+                }
+
+                .icon {
+                    position: relative;
+                    border-radius: 10px;
+                    padding: 8px;
+
+                    a {
+                        position: relative;
+                        color: $colorSecundario;
+                        transition: all .5s;
+
+                        i {
+                            font-size: 30px;
+                        }
+
+                        .rs-titulo {
+                            position: absolute;
+                            bottom: -5px;
+                            left: 0;
+                            background-color: $colorExtra1;
+                            padding: 5px 15px;
+                            border-radius: 10px;
+                            color: $background;
+                            font-weight: 500;
+                            font-size: 12px;
+                            opacity: 0;
+                            transition: all .5s;
+
+                            &::before {
+                                content: '';
+                                position: absolute;
+                                top: -5px;
+                                left: 25px;
+                                width: 12px;
+                                height: 12px;
+                                transform: rotate(45deg);
+                                background-color: $colorExtra1;
+
+                            }
+                        }
+
+                        &:hover {
+                            color: $colorExtra1;
+
+                            .rs-titulo {
+                                opacity: 1;
+                                bottom: -40px;
+                            }
+                        }
+                    }
+                }
+            }
+
+
+        }
+    }
+}

@@ -1,0 +1,24 @@
+/* Componentes */
+.overlay {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: $colorOverlay, $alpha: 0.5);
+    z-index: -1;
+}
+.line-bottom {
+    position: relative;
+    display: inline;
+
+    &::before {
+        content: '';
+        position: absolute;
+        background-color: $colorExtra1;
+        width: 100%;
+        height: 4px;
+        bottom: -5px;
+    }
+}
